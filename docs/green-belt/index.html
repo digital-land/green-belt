@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title> | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    	<meta name="digital-land:template" content="page-per-thing/index.html">	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+<script src="https://digital-land.github.io/javascripts/dl-maps.js"></script>
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div><header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+</div>
+    </div>
+  </div>
+</header>
+
+      <div class="govuk-width-container ">
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div><div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Green Belt</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">green-belt</li>
+  </ol>
+</div>        <main class="govuk-main-wrapper " id="main-content" role="main">
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 id="index-title" class="govuk-heading-xl"></h1>
+ 
+        </div>
+        <div class="govuk-grid-column-one-third">
+            <div class="dlf-feedback dlf-feedback--stacked dlf-feedback--flush">
+    <div class="dlf-feedback__prompt">
+        <div class="dlf-feedback__prompt-content">
+            <span class="dlf-feedback__prompt-content__text">Have you spotted any issues with the data?</span>
+        </div>
+        <div class="dlf-feedback__prompt-action">
+            <a href="mailto:digitalLand@communities.gov.uk?subject=Feedback on  data" class="govuk-button dlf-feedback__prompt__link">Provide feedback</a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+               
+
+    <form class="filter-organisations-list__form govuk-!-margin-bottom-9" data-filter="form">
+        <label class="filter-list__label govuk-label govuk-!-font-weight-bold" for="filter-organisations-list">I'm looking for</label>
+        <input class="filter-list__input govuk-input" type="text" id="filter-organisations-list" placeholder="For example, Harrogate Borough Council">
+    </form>
+    <div class="js-no-filter-list-matches"><p class="govuk-body">No matches.</p></div> <!-- needs to go outside of index-list-wrapper -->
+
+
+        <div class="index-list-wrapper">
+            <div class="count-wrapper">
+                <p class="govuk-body" aria-hidden="true">Showing <span class="js-list-count">188</span> records.</p>
+                <p class="govuk-visually-hidden">There are
+                    <span class="js-accessible-list-count">188</span>
+                    records listed.
+                </p>
+            </div>        <form action="" class="govuk-form govuk-!-margin-bottom-4 dl-historical-toggle-form js-hidden" data-historical="form">
+            <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="hsitorical" name="hsitorical" type="checkbox" value="show">
+                    <label class="govuk-label govuk-checkboxes__label" for="hsitorical">
+                    Show historical records
+                    </label>
+                </div>
+            </div>
+        </form>
+<table class="dl-index-list"
+ data-filter="list" data-historical='list'>
+  <tbody>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000006-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E06000006-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000007-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E06000007-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000008-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E06000008-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000009-Blackpool" data-filter="match-content">green-belt:E06000009-Blackpool</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Blackpool</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000014-York" data-filter="match-content">green-belt:E06000014-York</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">York</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000015-Derby-and-Nottingham" data-filter="match-content">green-belt:E06000015-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000018-Derby-and-Nottingham" data-filter="match-content">green-belt:E06000018-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000021-Stoke-on-Trent" data-filter="match-content">green-belt:E06000021-Stoke-on-Trent</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke-on-Trent</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000022-Bath-and-Bristol" data-filter="match-content">green-belt:E06000022-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000023-Bath-and-Bristol" data-filter="match-content">green-belt:E06000023-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000024-Bath-and-Bristol" data-filter="match-content">green-belt:E06000024-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000025-Bath-and-Bristol" data-filter="match-content">green-belt:E06000025-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000032-London" data-filter="match-content">green-belt:E06000032-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000033-London" data-filter="match-content">green-belt:E06000033-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000034-London" data-filter="match-content">green-belt:E06000034-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000035-London" data-filter="match-content">green-belt:E06000035-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000036-London" data-filter="match-content">green-belt:E06000036-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000039-London" data-filter="match-content">green-belt:E06000039-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000040-London" data-filter="match-content">green-belt:E06000040-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000041-London" data-filter="match-content">green-belt:E06000041-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000047-Tyne-and-Wear" data-filter="match-content">green-belt:E06000047-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000049-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E06000049-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000049-Stoke-on-Trent" data-filter="match-content">green-belt:E06000049-Stoke-on-Trent</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke-on-Trent</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000050-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E06000050-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000051-Birmingham" data-filter="match-content">green-belt:E06000051-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000054-Bath-and-Bristol" data-filter="match-content">green-belt:E06000054-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000056-London" data-filter="match-content">green-belt:E06000056-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000057-Tyne-and-Wear" data-filter="match-content">green-belt:E06000057-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000058-Bournemouth--Christchurch-and-Poole" data-filter="match-content">green-belt:E06000058-Bournemouth, Christchurch and Poole</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bournemouth, Christchurch and Poole</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E06000059-Bournemouth--Christchurch-and-Poole" data-filter="match-content">green-belt:E06000059-Bournemouth, Christchurch and Poole</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bournemouth, Christchurch and Poole</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000004-London" data-filter="match-content">green-belt:E07000004-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000005-London" data-filter="match-content">green-belt:E07000005-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000006-London" data-filter="match-content">green-belt:E07000006-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000007-London" data-filter="match-content">green-belt:E07000007-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000008-Cambridge" data-filter="match-content">green-belt:E07000008-Cambridge</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cambridge</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000009-Cambridge" data-filter="match-content">green-belt:E07000009-Cambridge</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cambridge</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000012-Cambridge" data-filter="match-content">green-belt:E07000012-Cambridge</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cambridge</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000032-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000032-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000033-South-and-West-Yorkshire" data-filter="match-content">green-belt:E07000033-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000034-South-and-West-Yorkshire" data-filter="match-content">green-belt:E07000034-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000036-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000036-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000037-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000037-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000038-South-and-West-Yorkshire" data-filter="match-content">green-belt:E07000038-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000039-Burton-upon-Trent-and-Swadlincote" data-filter="match-content">green-belt:E07000039-Burton-upon-Trent and Swadlincote</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Burton-upon-Trent and Swadlincote</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000039-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000039-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000066-London" data-filter="match-content">green-belt:E07000066-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000068-London" data-filter="match-content">green-belt:E07000068-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000069-London" data-filter="match-content">green-belt:E07000069-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000070-London" data-filter="match-content">green-belt:E07000070-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000072-London" data-filter="match-content">green-belt:E07000072-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000073-London" data-filter="match-content">green-belt:E07000073-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000075-London" data-filter="match-content">green-belt:E07000075-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000077-London" data-filter="match-content">green-belt:E07000077-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000078-Cheltenham-and-Gloucester" data-filter="match-content">green-belt:E07000078-Cheltenham and Gloucester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cheltenham and Gloucester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000079-Cheltenham-and-Gloucester" data-filter="match-content">green-belt:E07000079-Cheltenham and Gloucester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cheltenham and Gloucester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000083-Cheltenham-and-Gloucester" data-filter="match-content">green-belt:E07000083-Cheltenham and Gloucester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Cheltenham and Gloucester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000091-Bournemouth--Christchurch-and-Poole" data-filter="match-content">green-belt:E07000091-Bournemouth, Christchurch and Poole</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bournemouth, Christchurch and Poole</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000095-London" data-filter="match-content">green-belt:E07000095-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000096-London" data-filter="match-content">green-belt:E07000096-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000098-London" data-filter="match-content">green-belt:E07000098-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000099-London" data-filter="match-content">green-belt:E07000099-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000102-London" data-filter="match-content">green-belt:E07000102-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000103-London" data-filter="match-content">green-belt:E07000103-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000107-London" data-filter="match-content">green-belt:E07000107-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000109-London" data-filter="match-content">green-belt:E07000109-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000110-London" data-filter="match-content">green-belt:E07000110-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000111-London" data-filter="match-content">green-belt:E07000111-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000115-London" data-filter="match-content">green-belt:E07000115-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000116-London" data-filter="match-content">green-belt:E07000116-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000117-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000117-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000118-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000118-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000119-Blackpool" data-filter="match-content">green-belt:E07000119-Blackpool</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Blackpool</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000120-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000120-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000121-Carnforth--Lancaster-and-Morecambe" data-filter="match-content">green-belt:E07000121-Carnforth, Lancaster and Morecambe</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Carnforth, Lancaster and Morecambe</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000122-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000122-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000123-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000123-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000124-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000124-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000125-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000125-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000126-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000126-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000127-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E07000127-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000128-Blackpool" data-filter="match-content">green-belt:E07000128-Blackpool</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Blackpool</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000164-York" data-filter="match-content">green-belt:E07000164-York</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">York</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000165-South-and-West-Yorkshire" data-filter="match-content">green-belt:E07000165-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000165-York" data-filter="match-content">green-belt:E07000165-York</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">York</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000167-York" data-filter="match-content">green-belt:E07000167-York</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">York</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000169-South-and-West-Yorkshire" data-filter="match-content">green-belt:E07000169-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000169-York" data-filter="match-content">green-belt:E07000169-York</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">York</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000170-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000170-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000172-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000172-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000173-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000173-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000175-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000175-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000176-Derby-and-Nottingham" data-filter="match-content">green-belt:E07000176-Derby and Nottingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Derby and Nottingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000177-Oxford" data-filter="match-content">green-belt:E07000177-Oxford</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxford</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000178-Oxford" data-filter="match-content">green-belt:E07000178-Oxford</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxford</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000179-Oxford" data-filter="match-content">green-belt:E07000179-Oxford</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxford</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000180-Oxford" data-filter="match-content">green-belt:E07000180-Oxford</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxford</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000181-Oxford" data-filter="match-content">green-belt:E07000181-Oxford</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Oxford</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000187-Bath-and-Bristol" data-filter="match-content">green-belt:E07000187-Bath and Bristol</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Bath and Bristol</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000192-Birmingham" data-filter="match-content">green-belt:E07000192-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000193-Burton-upon-Trent-and-Swadlincote" data-filter="match-content">green-belt:E07000193-Burton-upon-Trent and Swadlincote</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Burton-upon-Trent and Swadlincote</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000194-Birmingham" data-filter="match-content">green-belt:E07000194-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000195-Stoke-on-Trent" data-filter="match-content">green-belt:E07000195-Stoke-on-Trent</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke-on-Trent</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000196-Birmingham" data-filter="match-content">green-belt:E07000196-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000197-Birmingham" data-filter="match-content">green-belt:E07000197-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000197-Stoke-on-Trent" data-filter="match-content">green-belt:E07000197-Stoke-on-Trent</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke-on-Trent</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000198-Stoke-on-Trent" data-filter="match-content">green-belt:E07000198-Stoke-on-Trent</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Stoke-on-Trent</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000199-Birmingham" data-filter="match-content">green-belt:E07000199-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000207-London" data-filter="match-content">green-belt:E07000207-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000208-London" data-filter="match-content">green-belt:E07000208-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000209-London" data-filter="match-content">green-belt:E07000209-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000210-London" data-filter="match-content">green-belt:E07000210-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000211-London" data-filter="match-content">green-belt:E07000211-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000212-London" data-filter="match-content">green-belt:E07000212-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000213-London" data-filter="match-content">green-belt:E07000213-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000214-London" data-filter="match-content">green-belt:E07000214-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000215-London" data-filter="match-content">green-belt:E07000215-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000216-London" data-filter="match-content">green-belt:E07000216-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000217-London" data-filter="match-content">green-belt:E07000217-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000218-Birmingham" data-filter="match-content">green-belt:E07000218-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000219-Birmingham" data-filter="match-content">green-belt:E07000219-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000220-Birmingham" data-filter="match-content">green-belt:E07000220-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000221-Birmingham" data-filter="match-content">green-belt:E07000221-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000222-Birmingham" data-filter="match-content">green-belt:E07000222-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000228-London" data-filter="match-content">green-belt:E07000228-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000234-Birmingham" data-filter="match-content">green-belt:E07000234-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000236-Birmingham" data-filter="match-content">green-belt:E07000236-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000237-Birmingham" data-filter="match-content">green-belt:E07000237-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000238-Birmingham" data-filter="match-content">green-belt:E07000238-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000239-Birmingham" data-filter="match-content">green-belt:E07000239-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000240-London" data-filter="match-content">green-belt:E07000240-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000241-London" data-filter="match-content">green-belt:E07000241-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000242-London" data-filter="match-content">green-belt:E07000242-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E07000243-London" data-filter="match-content">green-belt:E07000243-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000001-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000001-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000002-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000002-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000003-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000003-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000004-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000004-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000005-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000005-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000006-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000006-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000007-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000007-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000008-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000008-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000009-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000009-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000010-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000010-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000011-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000011-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000012-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000012-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000013-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000013-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000014-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000014-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000015-Merseyside-and-Greater-Manchester" data-filter="match-content">green-belt:E08000015-Merseyside and Greater Manchester</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Merseyside and Greater Manchester</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000016-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000016-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000017-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000017-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000018-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000018-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000019-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000019-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000021-Tyne-and-Wear" data-filter="match-content">green-belt:E08000021-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000022-Tyne-and-Wear" data-filter="match-content">green-belt:E08000022-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000023-Tyne-and-Wear" data-filter="match-content">green-belt:E08000023-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000024-Tyne-and-Wear" data-filter="match-content">green-belt:E08000024-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000025-Birmingham" data-filter="match-content">green-belt:E08000025-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000026-Birmingham" data-filter="match-content">green-belt:E08000026-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000027-Birmingham" data-filter="match-content">green-belt:E08000027-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000028-Birmingham" data-filter="match-content">green-belt:E08000028-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000029-Birmingham" data-filter="match-content">green-belt:E08000029-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000030-Birmingham" data-filter="match-content">green-belt:E08000030-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000031-Birmingham" data-filter="match-content">green-belt:E08000031-Birmingham</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Birmingham</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000032-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000032-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000033-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000033-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000034-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000034-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000035-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000035-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000036-South-and-West-Yorkshire" data-filter="match-content">green-belt:E08000036-South and West Yorkshire</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">South and West Yorkshire</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E08000037-Tyne-and-Wear" data-filter="match-content">green-belt:E08000037-Tyne and Wear</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">Tyne and Wear</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000002-London" data-filter="match-content">green-belt:E09000002-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000003-London" data-filter="match-content">green-belt:E09000003-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000004-London" data-filter="match-content">green-belt:E09000004-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000006-London" data-filter="match-content">green-belt:E09000006-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000008-London" data-filter="match-content">green-belt:E09000008-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000009-London" data-filter="match-content">green-belt:E09000009-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000010-London" data-filter="match-content">green-belt:E09000010-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000011-London" data-filter="match-content">green-belt:E09000011-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000014-London" data-filter="match-content">green-belt:E09000014-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000015-London" data-filter="match-content">green-belt:E09000015-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000016-London" data-filter="match-content">green-belt:E09000016-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000017-London" data-filter="match-content">green-belt:E09000017-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000018-London" data-filter="match-content">green-belt:E09000018-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000021-London" data-filter="match-content">green-belt:E09000021-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000025-London" data-filter="match-content">green-belt:E09000025-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000026-London" data-filter="match-content">green-belt:E09000026-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000027-London" data-filter="match-content">green-belt:E09000027-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000029-London" data-filter="match-content">green-belt:E09000029-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr>
+<tr class=""  data-filter="item" data-historical-item="false">
+  <td>
+    <h4 class="govuk-heading-s govuk-!-font-weight-regular dl-break-word govuk-!-margin-bottom-0">
+      <a class="govuk-link" href="./E09000031-London" data-filter="match-content">green-belt:E09000031-London</a>
+    </h4>
+  </td>
+  <td>
+    <p class="govuk-body govuk-!-margin-bottom-0" data-filter="match-content">London</p>
+  </td>
+</tr></tbody>
+</table>
+
+        </div>
+
+
+        </main>
+      </div>
+
+<div class="dl-sticky-banner__container" data-module="sticky-banner">
+    <div class="dl-sticky-banner">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+<a href="#index-title" class="govuk-link govuk-link--no-visited-state back-to-top__link">
+    <svg role="presentation" focusable="false" class="back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+        <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg>Back to top
+</a>            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="govuk-footer " role="contentinfo"
+>
+  <div class="govuk-width-container ">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          <h2 class="govuk-visually-hidden">Support links</h2>              <ul class="govuk-footer__inline-list">
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+              </ul>
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+
+
+
+    <script>
+        const $bttBanner = document.querySelector('[data-module="sticky-banner"]')
+        const bttComponent = new DLFrontend.BackToTop($bttBanner).init({
+            endElementSelector: '.govuk-footer',
+            startElementSelector: '#index-title',
+            fixClass: 'dl-sticky-banner--fixed'
+        })
+    </script>
+
+
+        <script>
+        // initialise list filter
+        const $form = document.querySelector('[data-filter="form"]');
+        new window.DLFrontend.FilterList($form).init({
+            list_section_selector: '.index-list-wrapper',
+            count_wrapper_selector: '.count-wrapper'
+        })
+        </script>
+        <script>
+            const showCounts = true
+            const $hist = document.querySelector('[data-historical="form"]');
+            new window.DLFrontend.FilterHistorical($hist).init({
+                triggerEvents: "list:filtered",
+                listWrapperSelector: '.index-list-wrapper',
+                showCountsWhenShowingAll: showCounts
+            })
+        </script>
+
+  </body>
+</html>
