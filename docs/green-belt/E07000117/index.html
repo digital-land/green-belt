@@ -155,21 +155,21 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/green-belt/green-belt/E07000117</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                green-belt:E07000117            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">reference
-            </dt>
-            <dd class="govuk-summary-list__value">                Burnley            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                Merseyside and Greater Manchester            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">entry-date
+            <dt class="govuk-summary-list__key">Reference
             </dt>
-            <dd class="govuk-summary-list__value">                2021-08-17            </dd>
+            <dd class="govuk-summary-list__value">                Burnley            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Entry date
+            </dt>
+            <dd class="govuk-summary-list__value">                2021-08-19            </dd>
         </div>    
     </dl></article>
 </div>
@@ -182,7 +182,7 @@ crossorigin="" />
     class="dl-map govuk-!-margin-top-4"
     id="dlMap"
     data-module="boundary-map"
-    style="height: 460px;" data-geojson-urls="geometry.geojson"   
+    style="height: 460px;"   
 >
     <noscript>To view this map, you need to enable JavaScript.</noscript>
 </div>
@@ -216,8 +216,8 @@ crossorigin="" />
         </tr>
     </thead>
     <tbody>        <tr>
-            <td>2021-08-17</td>
-            <td><a href="https://github.com/digital-land/green-belt-collection/tree/main/transformed/green-belt/ff16b1f3a6ed078d661253ebf575179bb7f8375ecbbace1c73412e20436bc74f.csv#L128">ff16b1f3a6ed...</a></td>
+            <td>2021-08-19</td>
+            <td><a href="https://github.com/digital-land/green-belt-collection/tree/main/transformed/green-belt/a71f8f2bc5cb7f26ac80d0f81293aa262aa73f6e713cbcc221a2c60225e716c3.csv#L128">a71f8f2bc5cb...</a></td>
             <td>127</td>
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -342,21 +342,25 @@ crossorigin="" />
     const datasetName = "green-belt"
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
-    const mapComponent = new DLMaps.Map($mapElement).init({
-        initZoomCallback: function (featureGroup) {
-            console.log("initial load completed")
-            // do we need to check there isn't more than one shape?
-            const center = featureGroup.getBounds().getCenter()
-            const zoom = mapComponent.map.getZoom()
-            let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
-            console.log(url)
-            if ($nationalMapLink) {
-                // only show this for the datasets we've added to the national map
-                $nationalMapLink.href = url
-                $nationalMapLink.classList.remove("js-hidden")
-            }
-        }
-    })
+    const mapParams = {
+    initZoomCallback: function (featureGroup, map) {
+          console.log("initial load completed")
+          // do we need to check there isn't more than one shape?
+          const center = featureGroup.getBounds().getCenter()
+          const zoom = map.getZoom()
+          let url = `http://digital-land.github.io/map?layer=${datasetName}#${center.lat},${center.lng},${zoom}z`
+          console.log(url)
+          if ($nationalMapLink) {
+              // only show this for the datasets we've added to the national map
+              $nationalMapLink.href = url
+              $nationalMapLink.classList.remove("js-hidden")
+          }
+      }
+    }
+
+    mapParams.geojsonURLs = ["geometry.geojson"]
+
+    const mapComponent = new DLMaps.Map($mapElement).init(mapParams)
 </script>
 <script>
     // Initialise back to top
