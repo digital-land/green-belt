@@ -155,10 +155,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/green-belt/green-belt/E06000047</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Reference
-            </dt>
-            <dd class="govuk-summary-list__value">                County Durham            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                green-belt:E06000047            </dd>
@@ -167,9 +163,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Tyne and Wear            </dd>
         </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Reference
+            </dt>
+            <dd class="govuk-summary-list__value">                County Durham            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
-            <dd class="govuk-summary-list__value">                2021-08-19            </dd>
+            <dd class="govuk-summary-list__value">                2021-08-20            </dd>
         </div>    
     </dl></article>
 </div>
@@ -178,20 +178,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -209,16 +207,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>geography</th>
             <th>geometry</th>
             <th>reference</th>
-            <th>geography</th>
             <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
-            <td>2021-08-19</td>
-            <td><a href="https://github.com/digital-land/green-belt-collection/tree/main/transformed/green-belt/a71f8f2bc5cb7f26ac80d0f81293aa262aa73f6e713cbcc221a2c60225e716c3.csv#L7">a71f8f2bc5cb...</a></td>
+            <td>2021-08-20</td>
+            <td><a href="https://github.com/digital-land/green-belt-collection/tree/main/transformed/green-belt/5eab9819026e0b416f801f3fe13dabb17139d0fa12ec663c47680078b1804c8a.csv#L7">5eab9819026e...</a></td>
             <td>6</td>
+                <td>green-belt:E06000047</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -232,7 +231,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>County Durham</td> 
-                <td>green-belt:E06000047</td> 
                 <td>Tyne and Wear</td> 
         </tr>    </tbody>
 </table>
